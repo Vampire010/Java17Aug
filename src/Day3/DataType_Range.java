@@ -21,6 +21,8 @@ public class DataType_Range {
 		System.out.println(a);
 
 		
+		// int double = 20;
+		
 	}
 
 }
