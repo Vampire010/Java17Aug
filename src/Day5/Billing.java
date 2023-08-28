@@ -13,8 +13,29 @@ public class Billing {
 		}
 		else if(custType=="Premium Customer")
 		{
-			double totalAmount = billAmount - 10;
-			System.out.println("Premium Customer Bill " + totalAmount);
+			
+			
+			if(billAmount>=500)
+			{
+				double totalAmount = billAmount - 10;
+				System.out.println("Premium Customer Bill " + totalAmount);
+				
+				double chashBack =  billAmount - totalAmount;
+				System.out.println("Premium Customer Cashback " + chashBack);
+			}
+			else if(billAmount<500)
+			{
+				double totalAmount = billAmount - 10;
+				System.out.println("Premium Customer Bill " + totalAmount);
+				System.out.println("Premium Customer Cashback is Onle When "
+						+ "totlaAmount is Grater than 500");
+
+			}
+			else
+			{
+				System.out.println("Invalid Amount Entred");
+			}
+			
 		}
 		else if(custType=="Guest Customer")
 		{
@@ -25,6 +46,10 @@ public class Billing {
 		{
 			System.out.println("Invalid Customer Type");
 		}
+		
+		
+		
+		
 		
 		
 		
