@@ -3,12 +3,41 @@ package HotelStar;
 public class Customer
 {
 	//States / Attributes
-	String custID ;
-	String CustName;
-	String custAddress;
-	long custConatct;
-	public double  deliverCharge=5; 
+	private String custID ;
+	private String CustName;
+	private String custAddress;
+	private long custConatct;
+	
+	private double  deliverCharge=5; 
 
+	public void setcustID(String newcustID)
+	{
+		custID = newcustID;
+	}
+	
+	public String getcustID()
+	{
+		return custID;
+	}
+	
+	
+	
+	
+	
+	/*public Customer()
+	{
+		System.out.println("Im a No Argument Constructor");
+	} */
+	
+	/*public Customer(int a)
+	{
+		System.out.println("Im a  Argument Constructor");
+	}
+	
+	public Customer(int a , int b)
+	{
+		System.out.println("Im a  Argument Constructor");
+	} */
 	
 	//Behaviour // Implentation // Functionality // Method
 	public void displayCustomerDetails()

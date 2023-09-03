@@ -1,15 +1,20 @@
 package HotelStar;
 
-public class Tester extends Sampletest {
+public class Tester implements FinalBill {
 
 	public static void main(String[] args) 
 	{
 		
-		/*RegularCustomer regcust = new RegularCustomer();
-		regcust.displayCustomerDetails();
-		regcust.bill(null, 0, 0);
+		Customer regcust = new Customer();
+		//regcust.
+		regcust.setcustID("C101");
 		
-		PremiumCustomer prmcust = new PremiumCustomer();
+		System.out.println(regcust.getcustID());
+		
+		regcust.displayCustomerDetails();
+		regcust.bill( 0, 0);
+		
+		/*PremiumCustomer prmcust = new PremiumCustomer();
 		prmcust.displayCustomerDetails();
 		prmcust.bill(null, 0, 0);
 		
@@ -19,7 +24,7 @@ public class Tester extends Sampletest {
 		gstcust.bill(null, 0, 0); */
 		
 		Tester tst = new Tester();
-		tst.displayCustomerDetails(); 
+		tst.rewardPoints(); 
 		
 		/*PremiumCustomer regcust = new PremiumCustomer();
 		regcust.bill(101, 600); */
@@ -28,9 +33,16 @@ public class Tester extends Sampletest {
 		
 	}
 
-	@Override
+	/*@Override
 	public void displayCustomerDetails() {
 		System.out.println("Im From Abstarct Class");
+	} */
+
+	@Override
+	public void rewardPoints()
+	{
+		System.out.println("Im From Interface");
+		
 	}
 
 }
